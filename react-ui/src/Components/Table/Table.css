@@ -1,0 +1,51 @@
+.MuiBackdrop-root > .transfer__box {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 50px;
+  height: 50vh;
+  background-color: white;
+}
+*.MuiTableRow-root .id:hover {
+  cursor: pointer;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  background-color: white;
+  align-items: center;
+  /* justify-content: center; */
+}
+.details > h1 {
+  text-align: center;
+  font-size: 32px;
+  padding: 10px;
+}
+.details > .Name,
+.details > .Date,
+.details > .Account,
+.details > .Balance {
+  font-size: 18px;
+}
+.MuiBackdrop-root > .sending__money {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.357);
+  align-items: center;
+  justify-content: center;
+}
+.history {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-with: 200px) and (max-width: 780px) {
+  .details {
+    background-color: turquoise;
+  }
+}

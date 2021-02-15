@@ -1,0 +1,109 @@
+.create {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+}
+.create__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  height: max-content;
+  border-radius: 10px;
+  border: 1px solid blue;
+  /* box-shadow: 0 5px 10px rgb(131, 131, 131); */
+  transition: 0.3s ease-in-out;
+}
+.create__content > form .create__input {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  flex-direction: column;
+  /* background-color: #464646e7; */
+}
+.create__input > input {
+  width: 90%;
+  margin-right: 5%;
+  outline-width: 0px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: rgba(191, 203, 219, 0.438);
+  color: #0b071d;
+}
+.create__input:nth-child(1) {
+  margin-top: 1%;
+}
+.create__input:last-child {
+  margin-bottom: 2%;
+}
+.create__input > p {
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 5px;
+  margin-top: 10px;
+}
+.checkbox {
+  margin-top: 20px;
+}
+.create__input > .check {
+  padding: 10px 20px;
+  margin-left: 0px;
+  width: max-content;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: max-content;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg); /* IE 9 */
+    transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+    -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg); /* IE 9 */
+    transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg); /* IE 9 */
+    transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+    -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg); /* IE 9 */
+    transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
+  }
+}
+
+@media only screen and (min-width: 180px) and (max-width: 780px) {
+  .create__content {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 780px) and (max-width: 900px) {
+  .create__content {
+    width: 90%;
+  }
+}
+
+
